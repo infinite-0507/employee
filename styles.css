@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    color: #333;
+    margin-top: 20px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .input-container div {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #66afe9;
+  }
+
+  button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+
+  th {
+    background-color: grey;
+    color: white;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+  }
+
+  .required {
+    border-color: #FF4500;
+  }
+
+  .edit-mode {
+    background-color: #FFFFE0;
+  }

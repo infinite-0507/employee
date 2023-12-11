@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>EMPLOYEE DETAILS</h1>
+
+  <div class="input-container">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+    </div>
+    <div>
+      <label for="department">Deprtment ID:</label>
+      <input type="text" id="departmentID" required>
+    </div>
+    <div>
+      <label for="employeeID">Employee ID:</label>
+      <input type="text" id="employeeID" required>
+    </div>
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option disabled selected value> -- Select Gender -- </option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation" required>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" required>
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" required>
+    </div>
+    <div>
+      <label for="joiningDate">Joining Date:</label>
+      <input type="date" id="joiningDate" required>
+    </div>
+    <div>
+      <label for="salary">Present Salary:</label>
+      <input type="text" id="salary" required>
+    </div>
+  </div>
+
+  <button onclick="addEmployee()">Add Employee</button>
+
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employee ID</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+        <th>Designation</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Joining Date</th>
+        <th>Present Salary</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+    </tbody>
+  </table>
+
+</body>
+</html>
